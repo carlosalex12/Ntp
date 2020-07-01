@@ -31,8 +31,8 @@ export default function app() {
 }
 const styles = styleSheet({
   safeArea: {
-    backgroundColor: colors.PRIMARY_COLOR,
-    height: -90,
+    //backgroundColor: colors.PRIMARY_COLOR,
+    height:290,
     alingnItems: "center"
   },
   backgroud:{
