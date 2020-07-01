@@ -6,13 +6,13 @@ import Form from './src/components/Form'
 YellowBox.ignoreWarnings(["Pcker has been  extracted"])
 export default function app() {
   //crear estado y como los vamos a actualizar 
-  const [variableA, setvariableA]=useState(null);
-  const [variableB, setvariableC]=useState(null);
-  const [variableC, setvariableC]=useState(null);
+  const [capital, setCapital]=useState(null);
+  const [interes, setInteres]=useState(null);
+  const [meses, setMeses]=useState(null);
   const onSubnit =()=>{
-    console.log("variableA->",A);
-    console.log("variableB->",B)
-    console.log("variableC->",C)
+    console.log("capital->",capital);
+    console.log("intereses->",interes)
+    console.log("meses->",meses)
     
   }
   return (
@@ -23,9 +23,9 @@ export default function app() {
         <View style={styles.backgroud}/>
         <Text style={styles.tittleApp}>cotizador de prestamos </Text>
         <Form 
-        setvariableA={setvariableA}
-        setvariableB={setvariableB}
-        setvariableC={setvariableC}
+        setCapital={setCapital}
+        setInteres={setInteres}
+        setMeses={setMeses}
         
         />
       </SafeAreaView>

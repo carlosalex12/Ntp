@@ -14,26 +14,23 @@ const{setCapital,setInteres,setMeses}=props;
     return (
         <View style={styles.ViewForm}>
             <View style={styles.inputView}>
-                <TextInput placeholder="cantidad a pedir" 
+                <TextInput placeholder="valor de a" 
                 keyboardType="numeric"
                 style={styles.input}
-                onChange={(e)=> setCapital(e.nativeEvent.text)}
+                onChange={(e)=> setvariableA(e.nativeEvent.text)}
                 />
-                <TextInput placeholder="Porcentaje" 
+                <TextInput placeholder="valor de b" 
                 keyboardType="numeric"
                 style={[styles.input,styles.inputPorcentaje]}
+                onChange={(e)=> setvariableB(e.nativeEvent.text)}
                 />
-
+ <TextInput placeholder="valor de c" 
+                keyboardType="numeric"
+                style={[styles.input,styles.inputPorcentaje]}
+                onChange={(e)=> setvariableC(e.nativeEvent.text)}
+                />
             </View>
-            <RNPickerSelect
-            onValueChange={(value) => console.log(value)}
-            items={[
-                { label: '3 meses', value: 3 },
-                { label: '6 meses', value: 6 },
-                { label: '12 meses', value: 12 },
-                { label: '24 meses', value: 24 },
-            ]}
-        />
+          
         </View>
 
 
